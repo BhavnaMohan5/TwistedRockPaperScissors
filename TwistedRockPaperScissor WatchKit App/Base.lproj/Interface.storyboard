@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TwistedRockPaperScissor_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" hidden="YES" text="You Win" id="35M-QC-o1m">
+                            <fontDescription key="font" type="system" pointSize="17"/>
+                        </label>
+                        <imageView width="0.5" height="0.5" alignment="center" id="jzj-cy-G9I"/>
+                        <separator alignment="left" id="cPV-Rg-End"/>
+                        <group width="1" height="0.33000000000000002" alignment="left" id="UDR-8B-XPa">
+                            <items>
+                                <button width="0.34000000000000002" height="1" alignment="left" backgroundImage="rock" id="irF-WZ-0xM">
+                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="rockTapped" destination="AgC-eL-Hgc" id="clb-hV-jVY"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" height="1" alignment="left" backgroundImage="paper" id="wbd-oH-ssh">
+                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="paperTapped" destination="AgC-eL-Hgc" id="ZI6-LL-x7f"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" height="1" alignment="left" backgroundImage="scissors" id="5Rn-NZ-PK6">
+                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="scissorTapped" destination="AgC-eL-Hgc" id="HlV-Bg-sjn"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="0.90000000000000002" alignment="center" id="QyT-cJ-ux6">
+                            <items>
+                                <label alignment="left" text="1/20" id="Chq-qm-IEQ"/>
+                                <timer alignment="right" id="oc6-Po-pCJ">
+                                    <calendarUnit key="units" minute="YES" second="YES"/>
+                                </timer>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="answers" destination="UDR-8B-XPa" id="CRH-9d-txd"/>
+                        <outlet property="levelCounter" destination="Chq-qm-IEQ" id="pm1-ZD-HM6"/>
+                        <outlet property="paper" destination="wbd-oH-ssh" id="tak-cA-G6C"/>
+                        <outlet property="question" destination="jzj-cy-G9I" id="LVs-cE-VKv"/>
+                        <outlet property="result" destination="35M-QC-o1m" id="C7q-oT-5wp"/>
+                        <outlet property="rock" destination="irF-WZ-0xM" id="beD-8U-qgy"/>
+                        <outlet property="scissor" destination="5Rn-NZ-PK6" id="3Ud-Zq-1bS"/>
+                        <outlet property="timer" destination="oc6-Po-pCJ" id="t7y-Cs-p2N"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="TwistedRockPaperScissor_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>

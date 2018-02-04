@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB1C554E202623E300457C40 /* Array+Shuffling.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1C554D202623E300457C40 /* Array+Shuffling.swift */; };
+		FBBC3A1C2024EF700020186F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBC3A1B2024EF700020186F /* AppDelegate.swift */; };
+		FBBC3A1E2024EF700020186F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBC3A1D2024EF700020186F /* ViewController.swift */; };
+		FBBC3A212024EF700020186F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBBC3A1F2024EF700020186F /* Main.storyboard */; };
+		FBBC3A232024EF700020186F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBBC3A222024EF700020186F /* Assets.xcassets */; };
+		FBBC3A262024EF700020186F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBBC3A242024EF700020186F /* LaunchScreen.storyboard */; };
+		FBBC3A2B2024EF700020186F /* TwistedRockPaperScissor WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FBBC3A2A2024EF700020186F /* TwistedRockPaperScissor WatchKit App.app */; };
+		FBBC3A312024EF700020186F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBBC3A2F2024EF700020186F /* Interface.storyboard */; };
+		FBBC3A332024EF700020186F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBBC3A322024EF700020186F /* Assets.xcassets */; };
+		FBBC3A3A2024EF700020186F /* TwistedRockPaperScissor WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FBBC3A392024EF700020186F /* TwistedRockPaperScissor WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FBBC3A3F2024EF700020186F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBC3A3E2024EF700020186F /* InterfaceController.swift */; };
+		FBBC3A412024EF700020186F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBC3A402024EF700020186F /* ExtensionDelegate.swift */; };
+		FBBC3A432024EF700020186F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBC3A422024EF700020186F /* NotificationController.swift */; };
+		FBBC3A452024EF700020186F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBBC3A442024EF700020186F /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBBC3A2C2024EF700020186F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBBC3A102024EF700020186F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBBC3A292024EF700020186F;
+			remoteInfo = "TwistedRockPaperScissor WatchKit App";
+		};
+		FBBC3A3B2024EF700020186F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBBC3A102024EF700020186F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBBC3A382024EF700020186F;
+			remoteInfo = "TwistedRockPaperScissor WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FBBC3A4D2024EF700020186F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FBBC3A3A2024EF700020186F /* TwistedRockPaperScissor WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBBC3A512024EF700020186F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FBBC3A2B2024EF700020186F /* TwistedRockPaperScissor WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FB1C554D202623E300457C40 /* Array+Shuffling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Shuffling.swift"; sourceTree = "<group>"; };
+		FBBC3A182024EF700020186F /* TwistedRockPaperScissor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwistedRockPaperScissor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBBC3A1B2024EF700020186F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FBBC3A1D2024EF700020186F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FBBC3A202024EF700020186F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBBC3A222024EF700020186F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBBC3A252024EF700020186F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FBBC3A272024EF700020186F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBBC3A2A2024EF700020186F /* TwistedRockPaperScissor WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TwistedRockPaperScissor WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBBC3A302024EF700020186F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		FBBC3A322024EF700020186F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBBC3A342024EF700020186F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBBC3A392024EF700020186F /* TwistedRockPaperScissor WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TwistedRockPaperScissor WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBBC3A3E2024EF700020186F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		FBBC3A402024EF700020186F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		FBBC3A422024EF700020186F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		FBBC3A442024EF700020186F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBBC3A462024EF700020186F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBBC3A472024EF700020186F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBBC3A152024EF700020186F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBBC3A362024EF700020186F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBBC3A0F2024EF700020186F = {
+			isa = PBXGroup;
+			children = (
+				FBBC3A1A2024EF700020186F /* TwistedRockPaperScissor */,
+				FBBC3A2E2024EF700020186F /* TwistedRockPaperScissor WatchKit App */,
+				FBBC3A3D2024EF700020186F /* TwistedRockPaperScissor WatchKit Extension */,
+				FBBC3A192024EF700020186F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBBC3A192024EF700020186F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBBC3A182024EF700020186F /* TwistedRockPaperScissor.app */,
+				FBBC3A2A2024EF700020186F /* TwistedRockPaperScissor WatchKit App.app */,
+				FBBC3A392024EF700020186F /* TwistedRockPaperScissor WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBBC3A1A2024EF700020186F /* TwistedRockPaperScissor */ = {
+			isa = PBXGroup;
+			children = (
+				FBBC3A1B2024EF700020186F /* AppDelegate.swift */,
+				FBBC3A1D2024EF700020186F /* ViewController.swift */,
+				FBBC3A1F2024EF700020186F /* Main.storyboard */,
+				FBBC3A222024EF700020186F /* Assets.xcassets */,
+				FBBC3A242024EF700020186F /* LaunchScreen.storyboard */,
+				FBBC3A272024EF700020186F /* Info.plist */,
+			);
+			path = TwistedRockPaperScissor;
+			sourceTree = "<group>";
+		};
+		FBBC3A2E2024EF700020186F /* TwistedRockPaperScissor WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				FBBC3A2F2024EF700020186F /* Interface.storyboard */,
+				FBBC3A322024EF700020186F /* Assets.xcassets */,
+				FBBC3A342024EF700020186F /* Info.plist */,
+			);
+			path = "TwistedRockPaperScissor WatchKit App";
+			sourceTree = "<group>";
+		};
+		FBBC3A3D2024EF700020186F /* TwistedRockPaperScissor WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FBBC3A3E2024EF700020186F /* InterfaceController.swift */,
+				FB1C554D202623E300457C40 /* Array+Shuffling.swift */,
+				FBBC3A402024EF700020186F /* ExtensionDelegate.swift */,
+				FBBC3A422024EF700020186F /* NotificationController.swift */,
+				FBBC3A442024EF700020186F /* Assets.xcassets */,
+				FBBC3A462024EF700020186F /* Info.plist */,
+				FBBC3A472024EF700020186F /* PushNotificationPayload.apns */,
+			);
+			path = "TwistedRockPaperScissor WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBBC3A172024EF700020186F /* TwistedRockPaperScissor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBBC3A522024EF700020186F /* Build configuration list for PBXNativeTarget "TwistedRockPaperScissor" */;
+			buildPhases = (
+				FBBC3A142024EF700020186F /* Sources */,
+				FBBC3A152024EF700020186F /* Frameworks */,
+				FBBC3A162024EF700020186F /* Resources */,
+				FBBC3A512024EF700020186F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBBC3A2D2024EF700020186F /* PBXTargetDependency */,
+			);
+			name = TwistedRockPaperScissor;
+			productName = TwistedRockPaperScissor;
+			productReference = FBBC3A182024EF700020186F /* TwistedRockPaperScissor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBBC3A292024EF700020186F /* TwistedRockPaperScissor WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBBC3A4E2024EF700020186F /* Build configuration list for PBXNativeTarget "TwistedRockPaperScissor WatchKit App" */;
+			buildPhases = (
+				FBBC3A282024EF700020186F /* Resources */,
+				FBBC3A4D2024EF700020186F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBBC3A3C2024EF700020186F /* PBXTargetDependency */,
+			);
+			name = "TwistedRockPaperScissor WatchKit App";
+			productName = "TwistedRockPaperScissor WatchKit App";
+			productReference = FBBC3A2A2024EF700020186F /* TwistedRockPaperScissor WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		FBBC3A382024EF700020186F /* TwistedRockPaperScissor WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBBC3A4A2024EF700020186F /* Build configuration list for PBXNativeTarget "TwistedRockPaperScissor WatchKit Extension" */;
+			buildPhases = (
+				FBBC3A352024EF700020186F /* Sources */,
+				FBBC3A362024EF700020186F /* Frameworks */,
+				FBBC3A372024EF700020186F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TwistedRockPaperScissor WatchKit Extension";
+			productName = "TwistedRockPaperScissor WatchKit Extension";
+			productReference = FBBC3A392024EF700020186F /* TwistedRockPaperScissor WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBBC3A102024EF700020186F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Bhavna Mohan";
+				TargetAttributes = {
+					FBBC3A172024EF700020186F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					FBBC3A292024EF700020186F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					FBBC3A382024EF700020186F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FBBC3A132024EF700020186F /* Build configuration list for PBXProject "TwistedRockPaperScissor" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBBC3A0F2024EF700020186F;
+			productRefGroup = FBBC3A192024EF700020186F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBBC3A172024EF700020186F /* TwistedRockPaperScissor */,
+				FBBC3A292024EF700020186F /* TwistedRockPaperScissor WatchKit App */,
+				FBBC3A382024EF700020186F /* TwistedRockPaperScissor WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBBC3A162024EF700020186F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBBC3A262024EF700020186F /* LaunchScreen.storyboard in Resources */,
+				FBBC3A232024EF700020186F /* Assets.xcassets in Resources */,
+				FBBC3A212024EF700020186F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBBC3A282024EF700020186F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBBC3A332024EF700020186F /* Assets.xcassets in Resources */,
+				FBBC3A312024EF700020186F /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBBC3A372024EF700020186F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBBC3A452024EF700020186F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBBC3A142024EF700020186F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBBC3A1E2024EF700020186F /* ViewController.swift in Sources */,
+				FBBC3A1C2024EF700020186F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBBC3A352024EF700020186F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB1C554E202623E300457C40 /* Array+Shuffling.swift in Sources */,
+				FBBC3A432024EF700020186F /* NotificationController.swift in Sources */,
+				FBBC3A412024EF700020186F /* ExtensionDelegate.swift in Sources */,
+				FBBC3A3F2024EF700020186F /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBBC3A2D2024EF700020186F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBBC3A292024EF700020186F /* TwistedRockPaperScissor WatchKit App */;
+			targetProxy = FBBC3A2C2024EF700020186F /* PBXContainerItemProxy */;
+		};
+		FBBC3A3C2024EF700020186F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBBC3A382024EF700020186F /* TwistedRockPaperScissor WatchKit Extension */;
+			targetProxy = FBBC3A3B2024EF700020186F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBBC3A1F2024EF700020186F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBBC3A202024EF700020186F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FBBC3A242024EF700020186F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBBC3A252024EF700020186F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FBBC3A2F2024EF700020186F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBBC3A302024EF700020186F /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBBC3A482024EF700020186F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBBC3A492024EF700020186F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBBC3A4B2024EF700020186F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5C6Z6CJES9;
+				INFOPLIST_FILE = "TwistedRockPaperScissor WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BhavnaMohan.TwistedRockPaperScissor.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		FBBC3A4C2024EF700020186F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5C6Z6CJES9;
+				INFOPLIST_FILE = "TwistedRockPaperScissor WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BhavnaMohan.TwistedRockPaperScissor.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		FBBC3A4F2024EF700020186F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5C6Z6CJES9;
+				IBSC_MODULE = TwistedRockPaperScissor_WatchKit_Extension;
+				INFOPLIST_FILE = "TwistedRockPaperScissor WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BhavnaMohan.TwistedRockPaperScissor.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		FBBC3A502024EF700020186F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5C6Z6CJES9;
+				IBSC_MODULE = TwistedRockPaperScissor_WatchKit_Extension;
+				INFOPLIST_FILE = "TwistedRockPaperScissor WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BhavnaMohan.TwistedRockPaperScissor.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		FBBC3A532024EF700020186F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5C6Z6CJES9;
+				INFOPLIST_FILE = TwistedRockPaperScissor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BhavnaMohan.TwistedRockPaperScissor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBBC3A542024EF700020186F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5C6Z6CJES9;
+				INFOPLIST_FILE = TwistedRockPaperScissor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BhavnaMohan.TwistedRockPaperScissor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBBC3A132024EF700020186F /* Build configuration list for PBXProject "TwistedRockPaperScissor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBBC3A482024EF700020186F /* Debug */,
+				FBBC3A492024EF700020186F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBBC3A4A2024EF700020186F /* Build configuration list for PBXNativeTarget "TwistedRockPaperScissor WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBBC3A4B2024EF700020186F /* Debug */,
+				FBBC3A4C2024EF700020186F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBBC3A4E2024EF700020186F /* Build configuration list for PBXNativeTarget "TwistedRockPaperScissor WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBBC3A4F2024EF700020186F /* Debug */,
+				FBBC3A502024EF700020186F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBBC3A522024EF700020186F /* Build configuration list for PBXNativeTarget "TwistedRockPaperScissor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBBC3A532024EF700020186F /* Debug */,
+				FBBC3A542024EF700020186F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBBC3A102024EF700020186F /* Project object */;
+}
